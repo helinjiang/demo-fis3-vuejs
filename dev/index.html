@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FIS-VueJS 简书Demo</title>
+        <meta charset="utf-8">
+    
+    <link rel="stylesheet" type="text/css" href="/static/pkg/all.css" />
+</head>
+    <body>
+        <div id="app" class="row-fluid">
+            <div v-component="{{  currentView }}">
+            </div>
+        </div>
+    
+<script src="/static/js/mod.js"></script>
+<script type="text/javascript">/*resourcemap*/
+require.resourceMap({
+  "res": {
+    "component_modules/vue": {
+      "url": "/static/component_modules/vue.js",
+      "type": "js"
+    },
+    "category/category": {
+      "url": "/static/components/component/category/category.js",
+      "type": "js",
+      "deps": [
+        "component_modules/vue"
+      ]
+    },
+    "main/service": {
+      "url": "/static/components/component/main/service.js",
+      "type": "js"
+    },
+    "components/filter/datetime": {
+      "url": "/static/components/filter/datetime.js",
+      "type": "js",
+      "deps": [
+        "component_modules/vue"
+      ]
+    },
+    "list/list": {
+      "url": "/static/components/component/list/list.js",
+      "type": "js",
+      "deps": [
+        "component_modules/vue",
+        "main/service",
+        "components/filter/datetime"
+      ]
+    },
+    "search/search": {
+      "url": "/static/components/component/search/search.js",
+      "type": "js",
+      "deps": [
+        "component_modules/vue"
+      ]
+    },
+    "components/page/trend/trend": {
+      "url": "/static/components/page/trend/trend.js",
+      "type": "js",
+      "deps": [
+        "component_modules/vue",
+        "category/category",
+        "list/list",
+        "search/search"
+      ]
+    },
+    "component_modules/marked": {
+      "url": "/static/component_modules/marked.js",
+      "type": "js"
+    },
+    "components/page/article/article": {
+      "url": "/static/components/page/article/article.js",
+      "type": "js",
+      "deps": [
+        "component_modules/vue",
+        "main/service",
+        "component_modules/marked"
+      ]
+    },
+    "components/page/error/notfound": {
+      "url": "/static/components/page/error/notfound.js",
+      "type": "js",
+      "deps": [
+        "component_modules/vue"
+      ]
+    },
+    "component_modules/director": {
+      "url": "/static/component_modules/director.js",
+      "type": "js"
+    },
+    "footer/footer": {
+      "url": "/static/components/component/footer/footer.js",
+      "type": "js",
+      "deps": [
+        "component_modules/vue"
+      ]
+    },
+    "components/page/home/home": {
+      "url": "/static/components/page/home/home.js",
+      "type": "js",
+      "deps": [
+        "component_modules/vue"
+      ]
+    },
+    "main/main": {
+      "url": "/static/components/component/main/main.js",
+      "type": "js",
+      "deps": [
+        "component_modules/vue",
+        "component_modules/director",
+        "footer/footer",
+        "components/page/home/home"
+      ]
+    }
+  },
+  "pkg": {}
+});
+
+            require(['main/main.js']);
+        </script>
+</body>
+</html>
