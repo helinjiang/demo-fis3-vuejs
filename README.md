@@ -1,41 +1,29 @@
-## 使用FIS3和VueJS开发单页面应用
+## 使用FIS3和VueJS开发的一个例子
 
 ### 简介
 
-> demo应该是小而美的
+本文涉及到 fi3 和 vuejs，用于演示用法。
 
-本项目为使用FIS3(以下简称FIS)与VueJS开发单页面应用示例。由于目前VueJS相关的demo项目比较少而且简单，因此我们希望通过一个更加偏向实际的项目来体现FIS3与VueJS的结合。
+所有的源代码都放入到 `src` 目录下，编译之后则放入到 `dist` (使用 `fis3 release -d dist` 命令)
 
-我们选择了[简书](http://www.jianshu.com/)这款颇具情怀的产品来实现其列表页和文章页部分内容(仅供学习FIS3与VueJS使用，设计与素材内容版权归简书所有)。
-
+ 
 ### DEMO使用
 
-#### 快速开始
+#### 命令
 
 ```bash
 #安装fis3
 npm install -g fis3
-
-#下载项目
-git clone https://github.com/zhangtao07/fis-vuejs-seed.git
 
 #安装模块化插件,fis3支持本地插件
 npm install [-g] fis3-hook-module
 npm install [-g] fis3-postpackager-loader
 
 #编译预览
-cd fis-vuejs-seed
 fis3 release
 fis3 server start --type node
 
 ```
-
-#### demo截图
-
-![列表页](./doc/pic1.png)
-
-![文章页](./doc/pic2.png)
-
 
 ### FIS3结合
 
@@ -107,14 +95,10 @@ fis.match('**/*.scss', {
  - 静态资源表
    
    如果您想了解资源加载细节，推荐您了解FIS静态资源表机制，您可以看到生成的页面中已经有资源配置。更多细节请查看FIS官网文章。
- 
-#### 组件仓库
 
-为了保证诸如VueJS、jQuery等社区资源都能通过modjs方式组件式封装和加载，您可以进入[FIS Component](https://github.com/fis-components)下载或提交社区资源。
 
 
 ### 相关链接
 
- - [FIS官网](http://fis.baidu.com)
- - [Github](https://github.com/fex-team/fis3)
+ - [fis-vuejs-seed](https://github.com/zhangtao07/fis-vuejs-seed)
 

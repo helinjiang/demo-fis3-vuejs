@@ -1,8 +1,8 @@
 {
-  "name": "fis-vue-seed",
+  "name": "demo-fis3-vuejs",
   "version": "0.0.1",
-  "description": "Build VueJS project with FIS3",
-  "author": "zhangtao07",
+  "description": "Demo of fis3 and vuejs",
+  "author": "helinjiang",
   "license": "MIT",
   "dependencies": {
     "fis3-hook-module": "*",
