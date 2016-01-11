@@ -7,5 +7,12 @@
   "dependencies": {
     "fis3-hook-module": "*",
     "fis3-postpackager-loader": "*"
+  },
+  "devDependencies": {
+    "fis-parser-node-sass": "^0.1.8",
+    "fis-postprocessor-autoprefixer": "0.0.5",
+    "fis3-hook-commonjs": "^0.1.8",
+    "fis3-parser-babel": "^1.1.2",
+    "fis3-parser-node-sass": "0.0.1"
   }
 }
