@@ -1,22 +1,19 @@
-
 /**
  * Boot up the Vue instance and wire up the router.
  */
 
-// var Vue = require('component_modules/vue.js');
-// var Router = require('component_modules/director.js').Router;
-// var footer = require('footer/footer.js');
-// var home = require('components/page/home/home.js');
-
-
 var Vue = require('lib/vue');
 
+var IndexTest1 = require('/modules/index/test1/main');
+var IndexTest2 = require('/modules/index/test2/main');
+
 window.app = new Vue({
-    el: '#app',
-    data: {
-        'currentView' : 'home', //默认首页
-        'type'  : '',
-        'cate'  : '',
-        'article_id' : ''
-    }
+  el: '#app',
+  data: {
+    'currentView': 'index.html'
+  },
+  components: {
+    'index-test1': IndexTest1,
+    'test2': IndexTest2,
+  }
 });
